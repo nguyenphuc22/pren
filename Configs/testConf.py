@@ -25,11 +25,11 @@ configs['cuda'] = True
 configs['image_dir'] = '/home/yrj/Dataset/SceneText/English/Test_sets/CUTE80/crop/'
 configs['val_list'] = '/home/yrj/Dataset/SceneText/English/Test_sets/CUTE80/crop/gt.txt'
 
-configs['model_path'] = './models/pren.pth'
+configs['model_path'] = '/content/pren/models/pren.pth'
 
 configs['imgH'] = 64
 configs['imgW'] = 256
-configs['alphabet'] = "data/alphabet_en.txt"
+configs['alphabet'] = "/content/pren/data/alphabet_en.txt"
 
 configs['vert_test'] = True  # if the image has its height > width, rotate it and choose the prediction with the highest confidence
 configs['batchsize'] = 1  # if vert_test, batchsize should be 1

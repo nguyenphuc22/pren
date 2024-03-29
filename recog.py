@@ -111,9 +111,9 @@ if __name__== '__main__':
 
     tester = Recognizer(model)
 
-    imnames = os.listdir('samples')
+    imnames = os.listdir('/content/pren/samples')
     imnames.sort()
-    impaths = [os.path.join('samples', imname) for imname in imnames]
+    impaths = [os.path.join('/content/pren/samples', imname) for imname in imnames]
 
     for impath in impaths:
         pred = tester.recog(impath)
